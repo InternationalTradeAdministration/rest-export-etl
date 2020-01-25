@@ -1,0 +1,9 @@
+{
+  "ScheduleEvents": [
+    {
+      "ScheduleName": "ita-rest-export-etl-weekday-scheduler",
+      "ScheduleState": "ENABLED",
+      "ScheduleExpression": "cron(0 10-23 ? * MON-FRI *)"
+    }
+  ]
+}

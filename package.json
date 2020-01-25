@@ -1,0 +1,18 @@
+{
+  "name": "rest-export-etl",
+  "version": "1.0.0",
+  "scripts": {
+    "local": "./node_modules/.bin/node-lambda run -f local.env",
+    "package": "./node_modules/.bin/node-lambda package",
+    "deploy-staging": "./node_modules/.bin/node-lambda deploy -e staging -f deploy.staging.env -S event_sources.json"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.582.0",
+    "lodash": "^4.17.15",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "node-lambda": "^0.14.0",
+    "standard": "*"
+  }
+}
